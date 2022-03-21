@@ -30,8 +30,8 @@ const movie = () => {
         </div>
         <div className="searchbar">
           <Link href={"/search"}>
-            <button class="btn btn-primary btn-circle">
-              <i class="search-icon"></i>
+            <button className="btn btn-primary btn-circle">
+              <i className="search-icon"></i>
             </button>
           </Link>
         </div>
