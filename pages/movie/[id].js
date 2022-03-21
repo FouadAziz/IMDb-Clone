@@ -82,4 +82,4 @@ const Movie = () => {
   );
 };
 
-export default movie;
+export default Movie;
