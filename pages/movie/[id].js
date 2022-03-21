@@ -4,7 +4,7 @@ import { useState } from "react";
 import Loading from "../../components/loading";
 import Link from "next/link";
 
-const movie = () => {
+const Movie = () => {
   const router = useRouter();
 
   const [details, setDetails] = useState({ actorList: [] });
