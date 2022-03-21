@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #282828;
 }
 
 a {
@@ -13,4 +14,168 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #191a1a;
+  color: aliceblue;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+.movieCard img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movieCard:hover {
+  transform: scale(1.05);
+}
+.popList {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.load_div {
+  width: 100px;
+  height: 100px;
+}
+
+.actor {
+  display: flex;
+  flex-direction: column;
+  background-color: #191a1a;
+  color: aliceblue;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+.actor img {
+  max-width: 100%;
+  height: auto;
+}
+.details-page {
+  padding: 10px;
+}
+.main-details {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.btn {
+  margin: 1rem;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.btn-primary {
+  float: right;
+  margin: 20px;
+  color: white;
+  background: rgb(27, 27, 27);
+  border: 1px solid rgb(27, 27, 27);
+}
+.btn-circle {
+  padding: 0;
+  border-radius: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.search-icon {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  display: inline-flex;
+  box-sizing: border-box;
+  margin: -0.25rem 0 0 -0.25rem;
+  color: white;
+  border: 0.125rem solid white;
+  border-radius: 50%;
+}
+.search-icon::before {
+  position: absolute;
+  content: "";
+  top: 0.625rem;
+  left: 0.75rem;
+  box-sizing: border-box;
+  width: 0.125rem;
+  height: 0.5rem;
+  background: currentColor;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+}
+.logo {
+  margin-left: 20px;
+  color: #f5c518;
+  cursor: pointer;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10px;
+}
+
+.info {
+  color: white;
+}
+.cast {
+  color: aliceblue;
+}
+.cast h3 {
+  text-align: center;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.searchArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+}
+.searchTerm {
+  height: 25px;
+  width: 40rem;
+  border-radius: 10px 0 0 10px;
+  border: 0;
+  background: #191a1a;
+  padding: 10px;
+  color: #757575;
+}
+.searchTerm:focus {
+  background: #191a1a;
+}
+.searchButton {
+  height: 25px;
+  border-radius: 0 10px 10px 0;
+  border: 0;
+  background: #f5c518;
+  cursor: pointer;
 }
