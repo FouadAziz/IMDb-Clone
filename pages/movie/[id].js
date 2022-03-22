@@ -54,7 +54,7 @@ const Movie = () => {
           <div className="info">
             <h3>{details.fullTitle}</h3>
             <h5>Year:{details.year}</h5>
-            <h5>IMDb Rating: {details.year}</h5>
+            <h5>IMDb Rating: {details.imDbRating}</h5>
             <h5>Content Rating: {details.contentRating}</h5>
             <h5>Runtime: {details.runtimeStr}</h5>
             <p>
